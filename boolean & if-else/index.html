@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booleans</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="index.js"></script>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <p>Pick one</p>
+    <button
+      onclick="
+        let cpuMove = '';
+        const randomPick = Math.random();
+        if(randomPick >= 0 && randomPick < 1/3){
+            cpuMove = 'rock';
+        } else if(randomPick >= 1 && randomPick < 2/3) {
+             cpuMove = 'paper';
+        } else if ( randomPick >= 2/3 && randomPick < 1 ) {
+            cpuMove = 'scissors'
+        }
+        
+        let result = '';
+
+        if(cpuMove === 'rock'){
+            result = 'Tie.'
+        } else if (cpuMove === 'paper'){
+            result = 'Computer won!'
+        } else if (cpuMove === 'scissors'){
+            result = 'You won'
+        }
+        
+        alert('You picked rock! , cpu picked ' 
+        + cpuMove + '. the result is: ' + result)
+        "
+    >
+      Rock
+    </button>
+    <button
+      onclick="
+     cpuMove = '';
+     randomPick = Math.random();
+    if(randomPick >= 0 && randomPick < 1/3){
+        cpuMove = 'rock';
+    } else if(randomPick >= 1 && randomPick < 2/3) {
+         cpuMove = 'paper';
+    } else if ( randomPick >= 2/3 && randomPick < 1 ) {
+        cpuMove = 'scissors'
+    }
+    
+     result = '';
+
+    if(cpuMove === 'rock'){
+        result = 'You won!'
+    } else if (cpuMove === 'paper'){
+        result = 'Tie'
+    } else if (cpuMove === 'scissors'){
+        result = 'Computer won'
+    }
+    
+    alert('You picked paper! , cpu picked ' 
+    + cpuMove + '. the result is: ' + result)
+    "
+    >
+      Paper
+    </button>
+    <button
+      onclick="
+    cpuMove = '';
+    randomPick = Math.random();
+   if(randomPick >= 0 && randomPick < 1/3){
+       cpuMove = 'rock';
+   } else if(randomPick >= 1 && randomPick < 2/3) {
+        cpuMove = 'paper';
+   } else if ( randomPick >= 2/3 && randomPick < 1 ) {
+       cpuMove = 'scissors'
+   }
+   
+    result = '';
+
+   if(cpuMove === 'rock'){
+       result = 'You won!'
+   } else if (cpuMove === 'paper'){
+       result = 'Computer won!'
+   } else if (cpuMove === 'scissors'){
+       result = 'Tie'
+   }
+   
+   alert('You picked paper! , cpu picked ' 
+   + cpuMove + '. the result is: ' + result)
+   "
+    >
+      Scissors
+    </button>
+  </body>
+</html>
