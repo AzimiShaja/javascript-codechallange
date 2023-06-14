@@ -1,0 +1,20 @@
+p{
+  font-family: 'Trebuchet MS';
+  color: #fff;
+}
+button {
+  font-family: 'Trebuchet MS';
+  color: #fff;
+  background-color: rgb(9, 107, 124);
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+button:hover{
+  background-color: #fff;
+  color: black;
+  border: 1px solid;
+}
