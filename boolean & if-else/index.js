@@ -1,8 +1,10 @@
-const score = {
+const score = JSON.parse(localStorage.getItem('score')) 
+|| {
     wins: 0,
     losses: 0,
     ties: 0
 };
+
 
 
 function pickComputerMove(){
@@ -67,6 +69,8 @@ function checkWinner(playerMove){
             score.ties++;
         } 
     }
+    
+    localStorage.setItem('score' , JSON.stringify(score));
 
     alert(`You picked rock, Cpu picked ${cpuMove}, result is ${result}
 Wins: ${score.wins}, Losses: ${score.losses},  Ties: ${score.ties}
@@ -76,4 +80,5 @@ function resetGame(){
     score.losses = 0;
     score.ties = 0;
     score.wins= 0;
+    localStorage.removeItem('score');
 }
