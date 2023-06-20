@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input class="text-field" type="text" />
+      <div class="first-row">
+        <button onclick="clearDisplay();" class="additional">AC</button>
+        <button class="additional">+/-</button>
+        <button class="additional">%</button>
+        <button onclick="performOperation('/')" class="operator">/</button>
+      </div>
+
+      <div class="second-row">
+        <button onclick="addNumber(7);" class="digits">7</button>
+        <button onclick="addNumber(8);" class="digits">8</button>
+        <button onclick="addNumber(9);" class="digits">9</button>
+        <button onclick="performOperation('*')" class="operator">X</button>
+      </div>
+
+      <div class="third-row">
+        <button onclick="addNumber(4);" class="digits">4</button>
+        <button onclick="addNumber(5);" class="digits">5</button>
+        <button onclick="addNumber(6);" class="digits">6</button>
+        <button onclick="performOperation('-')" class="operator">-</button>
+      </div>
+
+      <div class="forth-row">
+        <button onclick="addNumber(1);" class="digits">1</button>
+        <button onclick="addNumber(2);" class="digits">2</button>
+        <button onclick="addNumber(3);" class="digits">3</button>
+        <button onclick="performOperation('+')" class="operator">+</button>
+      </div>
+
+      <div class="last-row">
+        <button onclick="addNumber(0);" class="zero-digit">0</button>
+        <button onclick="addDecimal();" class="digits">.</button>
+        <button onclick="calculate();" class="operator">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
