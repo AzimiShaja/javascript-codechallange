@@ -1,5 +1,5 @@
 # Live Demo
-dicegamebyshja.netlify.app
+[dicegamebyshja.netlify.app](https://dicegamebyshja.netlify.app/)
 
 # preview
 
