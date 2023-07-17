@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1D5D9B;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    height: 100vh;
+}
+.header-text{
+    grid-column-start: 2;
+    grid-column-end:4;
+    margin-bottom: 50px;
+}
+.header-text h1 {
+    font-family: 'Poppins';
+    font-size: 100px;
+    text-align: center;
+    color:#F4D160 ;
+}
+.header-text h2{
+    font-family: 'Poppins';
+    font-size: 70px;
+    text-align: center;
+    color: #FBEEAC;
+}
+.player1{
+    display: flex;
+    flex-direction: column;
+    grid-column-start:2;
+    align-items: center;
+  
+}
+.player1 h2 {
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: #FBEEAC;
+    margin-bottom: 20px;
+}
+.player1 img, .player2 img{
+   height: 200px;
+}
+.player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player2 h2{
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: #FBEEAC;
+    margin-bottom: 20px;
+}
+.scoreSheet{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-row: 1fr 1fr;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4 ;
+}
+.scoreSheet h1 {
+    grid-column: span 2;
+    font-family: 'Poppins';
+    font-size: 50px;
+    text-align: center;
+    color:#F4D160 ;
+}
+.scoreSheet p {
+    display: inline;
+    font-family: 'Poppins';
+    font-size: 40px;
+    text-align: center;
+    color:#FBEEAC ;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4 ;
+}
+.buttons button{
+    font-family: 'Poppins';
+    width: 200px;
+    height: 50px;
+    border: 2px solid #F4D160;
+    background-color: transparent;
+    color: #f9f9f9;
+    border-radius: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.buttons button:hover{
+    background-color: #F4D160;
+    transform: scale(1.1);
+}
+.container > p{
+    font-size: 20px;
+    grid-row-start: 5 ;
+    grid-column: -2;
+    font-family: 'Poppins';
+    color: #f9f9f9;
+}
